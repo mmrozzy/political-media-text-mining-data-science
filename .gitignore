@@ -1,0 +1,37 @@
+# Folders
+LLM/
+Visualizations/
+src/
+tools/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+add_publisher_leaning.py
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data files (if you don't want to track large datasets)
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.txt
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
