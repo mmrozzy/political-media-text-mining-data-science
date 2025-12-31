@@ -277,9 +277,9 @@ def create_leaning_visualization(results, use_ner=False):
     fig, axes = plt.subplots(1, 3, figsize=(18, 8))
     
     leaning_colors = {
-        'Left': '#1f77b4',      # Blue
-        'Right': '#d62728',     # Red  
-        'Neutral': '#7f7f7f'    # Gray
+        'Left': '#1f77b4',      
+        'Right': '#d62728',      
+        'Neutral': '#7f7f7f'
     }
     
     leaning_order = ['Left', 'Right', 'Neutral']
@@ -320,8 +320,6 @@ def create_leaning_visualization(results, use_ner=False):
     plt.tight_layout()
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     print(f"Political leaning visualization saved as '{filename}'")
-
-
 
 def create_visualizations(results, use_ner=False):
     if not results:

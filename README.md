@@ -9,7 +9,7 @@ This project implements text mining techniques to analyze political media covera
 ## Core Components
 
 ### Primary Analysis
-- **[`src/tfidf_my.py`](src/tfidf_my.py)** - TF-IDF analysis system with dual normalization approaches (manual entity mapping and spaCy NER), custom stop word filtering, and political leaning-based analysis
+- **[`src/tfidf_my.py`](src/tfidf.py)** - TF-IDF analysis system with dual normalization approaches (manual entity mapping and spaCy NER), custom stop word filtering, and political leaning-based analysis
 
 ### Data Processing Utilities
 - **[`tools/add_publisher_leaning.py`](tools/add_publisher_leaning.py)** - Maps news publishers to political bias categories using a locally-developed publisher leaning dictionary
@@ -43,10 +43,6 @@ This project implements text mining techniques to analyze political media covera
 The TF-IDF analysis follows a structured pipeline that transforms raw news articles into meaningful insights:
 
 ### 1. **Data Ingestion & Processing**
-```python
-df = pd.read_csv('data_annotated.csv')
-categories = df['Categories'].unique()
-```
 Load dataset, identify content categories, validate data integrity.
 
 ### 2. **Text Preprocessing**
