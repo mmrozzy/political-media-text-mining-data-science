@@ -1,6 +1,6 @@
 # Political Media Coverage Analysis
 
-A  analysis framework for studying media coverage of political figures through data science techniques. This repository contains my personal contributions to a group project analyzing the media coverage of California Governor Gavin Newsom across North American news outlets over a one-month period.
+This repository contains my personal contributions to a group project analyzing the media coverage of California Governor Gavin Newsom across North American news outlets over a one-month period.
 
 ## Project Overview
 
