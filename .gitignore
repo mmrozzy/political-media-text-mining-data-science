@@ -9,7 +9,6 @@ __pycache__/
 *.pyd
 .Python
 *.so
-add_publisher_leaning.py
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
