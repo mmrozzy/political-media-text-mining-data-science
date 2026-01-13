@@ -1,5 +1,6 @@
 # Folders
 LLM/
+analysis/
 
 # Python
 __pycache__/
@@ -18,6 +19,7 @@ data/*.xlsx
 data/*.json
 data/*.parquet
 LLM/*.txt
+
 # Keep documentation files
 !README.md
 !docs/*.md
