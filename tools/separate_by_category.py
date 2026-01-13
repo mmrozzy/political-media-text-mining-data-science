@@ -1,3 +1,9 @@
+"""Separate dataset into category-specific CSV files.
+
+This module segments the annotated dataset into individual CSV files
+for each content category to enable targeted analysis.
+"""
+
 import pandas as pd
 import os
 from pathlib import Path

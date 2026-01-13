@@ -1,3 +1,9 @@
+"""Add political leaning classifications to news publishers.
+
+This module maps news publishers to political bias categories using a predefined
+dictionary of publisher political leanings (Left, Center-Left, Right, etc.).
+"""
+
 import pandas as pd
 import os
 

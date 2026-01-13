@@ -1,3 +1,10 @@
+"""TF-IDF analysis system for political media coverage.
+
+This module implements text mining techniques to analyze political media coverage
+using TF-IDF vectorization with dual normalization approaches (manual entity mapping
+and spaCy NER), custom stop word filtering, and political leaning-based analysis.
+"""
+
 import pandas as pd              
 import numpy as np               
 from sklearn.feature_extraction.text import TfidfVectorizer  

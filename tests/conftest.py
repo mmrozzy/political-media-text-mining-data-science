@@ -1,3 +1,9 @@
+"""Pytest configuration and shared fixtures.
+
+This module provides common fixtures for the test suite including
+temporary directories and environment setup.
+"""
+
 import pytest
 import tempfile
 import shutil

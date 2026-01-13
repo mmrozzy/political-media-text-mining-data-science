@@ -1,3 +1,9 @@
+"""Test suite for data processing tools.
+
+This module contains pytest tests for the data processing utilities:
+add_publisher_leaning, separate_by_category, and update_categories.
+"""
+
 import pytest
 import pandas as pd
 import tempfile
