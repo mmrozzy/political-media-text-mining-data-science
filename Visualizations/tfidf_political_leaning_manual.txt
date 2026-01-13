@@ -1,0 +1,47 @@
+TF-IDF ANALYSIS BY POLITICAL LEANING
+============================================================
+Normalization method: Manual
+============================================================
+
+Political Leaning: Left
+----------------------------------------
+ 1. trump                     0.0782
+ 2. democrat                  0.0599
+ 3. congress                  0.0531
+ 4. republican                0.0451
+ 5. president                 0.0358
+ 6. redistricting             0.0335
+ 7. voters                    0.0311
+ 8. proposition               0.0303
+ 9. campaign                  0.0287
+10. williamson                0.0285
+
+========================================
+Political Leaning: Right
+----------------------------------------
+ 1. trump                     0.0630
+ 2. democrat                  0.0541
+ 3. congress                  0.0395
+ 4. president                 0.0359
+ 5. republican                0.0339
+ 6. government                0.0321
+ 7. federal                   0.0311
+ 8. harris                    0.0285
+ 9. immigration               0.0240
+10. law                       0.0225
+
+========================================
+Political Leaning: Neutral
+----------------------------------------
+ 1. trump                     0.1552
+ 2. congress                  0.0926
+ 3. president                 0.0907
+ 4. democrat                  0.0815
+ 5. party                     0.0571
+ 6. government                0.0542
+ 7. campaign                  0.0525
+ 8. harris                    0.0496
+ 9. bloomberg                 0.0480
+10. federal                   0.0434
+
+========================================

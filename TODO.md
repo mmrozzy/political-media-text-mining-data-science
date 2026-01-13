@@ -1,0 +1,4 @@
+- check the docs files to see if need to remove /tweak anything
+- doctypes to all the files
+- add the political leaning results
+- how to expand and deal with data

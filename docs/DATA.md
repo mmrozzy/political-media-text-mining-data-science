@@ -52,7 +52,7 @@ Data was collected through web scraping and news aggregation APIs with attention
 **To reproduce this analysis**:
 1. Obtain similar news data through:
    - News aggregation APIs (NewsAPI, GDELT)
-   - Web scraping (with proper permissions)
+   - Web scraping
    - Academic news datasets
    - Media monitoring services
 
@@ -61,5 +61,5 @@ Data was collected through web scraping and news aggregation APIs with attention
    - Publisher information
    - Publication dates within target timeframe
    - Content categorization
-   
+
 (Verify licensing and usage rights for any news content used)

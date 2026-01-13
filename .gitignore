@@ -13,14 +13,21 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data files (if you don't want to track large datasets)
-*.csv
-*.xlsx
-*.json
-*.parquet
-*.txt
-TODO.md
-USAGE.md
+data/*.csv
+data/*.xlsx
+data/*.json
+data/*.parquet
+LLM/*.txt
+# Keep documentation files
+!README.md
+!docs/*.md
+!requirements.txt
+
+# Backup files
 README_backup.md
+*_backup.*
+*.bak
+*.backup
 
 # Environment
 .env

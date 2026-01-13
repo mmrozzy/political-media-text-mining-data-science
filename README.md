@@ -2,6 +2,30 @@
 
 NLP analysis framework for studying political media coverage through TF-IDF analysis and bias detection. This repository contains my contributions to a group project analyzing California Governor Gavin Newsom's media coverage across North American news outlets (Oct-Nov 2025).
 
+## Quick Start
+
+### Installation
+
+```bash
+git clone <repository-url>
+cd Politician_Media_Coverage
+pip install -r requirements.txt
+```
+
+### Usage
+```bash
+# Run TF-IDF analysis
+python src/tfidf.py
+
+# Process data with tools
+python tools/add_publisher_leaning.py
+python tools/separate_by_category.py
+python tools/update_categories.py
+
+# Run tests
+pytest tests/
+```
+
 ## Project Overview
 
 My work on the project implements text mining techniques to analyze political media coverage, featuring TF-IDF analysis with custom entity normalization, political bias detection, and category-based content analysis. 
@@ -30,10 +54,14 @@ My work on the project implements text mining techniques to analyze political me
 
 **500 articles analyzed** across 8 categories with clear political bias patterns:
 
-![TF-IDF Analysis Results](Visualizations/tfidf_visualization_manual.png)
+![TF-IDF Analysis Results](visualizations/tfidf_visualization_manual.png)
 
 **Top Findings**:
 - **Trump** dominates coverage across all political leanings
 - **Economic coverage** focuses on taxation and affordability  
 - **Climate articles** emphasize policy and energy issues
 - **Clear differentiation** between Left/Right keyword priorities
+
+## Testing
+
+The project includes pytest tests for the data processing tools in [`tests/test_tools.py`](tests/test_tools.py). Tests ensure reliable functionality for publisher leaning assignment, category separation, and data updates during refactoring.

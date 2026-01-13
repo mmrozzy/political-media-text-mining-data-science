@@ -1,0 +1,36 @@
+TF-IDF ANALYSIS METHODOLOGY
+
+This section describes the TF-IDF analysis methodology used to characterize the manually-coded topic categories for Governor Gavin Newsom media coverage. Following the annotation of 500 articles into 8 topical categories, TF-IDF analysis was applied to identify the 10 most characteristic terms for each category.
+
+Text Preprocessing and Normalization
+
+To ensure accurate TF-IDF calculations, a comprehensive text preprocessing pipeline was implemented with entity normalization as the core component. Manual entity normalization was selected over automated Named Entity Recognition (NER) due to superior performance with political terminology and domain-specific language patterns.
+
+Key entity consolidations included:
+- Political figures: "newsom," "gavin newsom," "governor newsom," "gov newsom," "gavin," "gov," "governor" → newsom_entity
+- Related figures: "trump," "donald trump," "president trump," "donald" → trump_entity  
+- Locations: "california," "calif," "ca," "golden state" → california_entity
+- Political terms: "democrat," "democratic," "democrats" → democrat_entity
+- Policy issues: "planned parenthood," "planned," "parenthood" → planned_parenthood_entity
+
+The preprocessing pipeline applied entity normalization before text cleaning to preserve semantic groupings. Regular expressions with word boundaries ensured precise matching while preventing unintended substring replacements.
+
+TF-IDF Implementation
+
+The TF-IDF vectorizer was configured with parameters optimized for news domain analysis:
+- max_features=1000: Limited vocabulary to most significant terms
+- min_df=2: Required terms to appear in at least 2 documents to reduce noise
+- max_df=0.8: Excluded terms appearing in >80% of documents to remove overly common words
+- Single n-grams: Used unigrams only since entity normalization handled multi-word concepts
+
+Custom stop words included temporal terms (days, months) and journalistic conventions ("said," "according," "report") while preserving normalized entities. Each of the 8 topic categories was analyzed independently, with article titles and bodies combined for each document within the category.
+
+Analysis Process
+
+For each topic category, TF-IDF scores were calculated across all articles within that category. The mean TF-IDF scores were computed for each term, and the top 10 terms with highest mean scores were selected as characteristic of that category. Entity names were converted back to readable format for presentation (e.g., "trump_entity" became "trump").
+
+The analysis successfully identified distinctive vocabularies for each topic category, providing quantitative characterization to complement the qualitative topic definitions from manual coding. This dual approach ensured both human interpretability and statistical rigor in topic characterization.
+
+Limitations
+
+The TF-IDF implementation has several limitations that should be considered when interpreting results. The max_df parameter (0.8) may exclude important entities that appear frequently across categories—successfully consolidated entities like "newsom_entity" can be filtered out if they exceed the frequency threshold, despite being central to the analysis. Manual entity mapping requires ongoing maintenance as new political figures or terminology emerge, and the fixed parameter configuration may not optimize performance across different dataset characteristics or coverage patterns.

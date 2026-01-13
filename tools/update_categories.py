@@ -1,7 +1,30 @@
+"""
+Update category names in annotated datasets to ensure consistency.
+
+This module standardizes category naming conventions across datasets by applying
+predefined mapping rules to normalize category labels.
+"""
+
 import pandas as pd
 import os
 
 def update_categories():
+    """
+    Update category names in CSV files according to predefined mapping rules.
+    
+    Processes data_annotated.csv and data_annotated_with_leaning.csv files,
+    applying standardized category naming conventions. Creates backup of 
+    original files and reports on changes made.
+    
+    Category mappings applied:
+    - "Social" → "Social Issues"
+    - "Corruption/Scandal" → "Corruption & Scandal"
+    - "Immigration and Security" → "Immigration & Security"
+    
+    Raises:
+        FileNotFoundError: If required CSV files are not found
+        Exception: For CSV reading/writing errors
+    """
     csv_files = ["data_annotated.csv", "data_annotated_with_leaning.csv"]
     
     for csv_file in csv_files:
@@ -57,4 +80,7 @@ def update_categories():
         print("\n" + "="*60)
 
 if __name__ == "__main__":
+    """
+    Main execution block - runs category update process when script is called directly.
+    """
     update_categories()
